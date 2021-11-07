@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -41,7 +41,7 @@ header{
 float: left;
 width: 150px;
 height: 60px;
-background-image: url('../img/logo1.png');
+background-image: url('img/logo1.png');
 background-size: 100% auto;
 background-repeat: no-repeat;
 background-position: center;
@@ -53,7 +53,7 @@ background-position: center;
     float: right;
     width: 160px;
     height: 60px;
-    background-image: url('../img/logo2.png') ;
+    background-image: url('img/logo2.png') ;
     background-size:  100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -70,37 +70,39 @@ section.cover-form{
     width: 100%;
     padding: 0 2%;
     height: 500px;
+
 }
 
 .image{
-    height: 700px;
+    position: relative;
+    height: 530px;
     background-position: center;
     background-size: cover;
-    background-image: url('../img/image-background.jpg');
+    background-image: url('img/image-background.jpg');
 
 
 }
 
 
 .form-container{
-   
-   float: right;
+   position: absolute;
+   right: 30px;
+   top: -2%;
    margin-right: 40px;
    width: 400px;
-   height: 110%;
+   height: 105%;
    background-color: rgba(255, 255, 255, 0.5);
-   
-   
-   top: -3%;
-   position: relative;
+   z-index: 2;
+   box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
+
 }
 
 .form-container h2{
    
    font-weight: normal;
-   padding: 20px 15px;
+   padding: 25px 15px;
    color: black;
-   font-size: 18px;
+   font-size: 23px;
    background-color: rgb(234, 236, 239);
 
 
@@ -157,6 +159,49 @@ margin-top: 40px;
 
 
 }
+
+
+section.chamada{
+
+     z-index: 1;
+     width: 100%;
+     text-align: center;
+     padding: 30px 0;
+     position:relative;
+}
+
+
+section.chamada div.container{
+background-color:#033C50 ;
+padding: 70px 0 50px 0;
+
+}
+
+
+section.chamada h2  {
+   width: 96%;
+   max-width: 700px;
+   display: inline-block;
+   color: white;
+   font-size: 24px;
+   font-weight: normal;
+
+
+}
+
+section.chamada p  {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+ 
+ 
+ }
+
+
+
 
 
 
